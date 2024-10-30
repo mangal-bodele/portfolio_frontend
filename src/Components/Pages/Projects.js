@@ -26,7 +26,7 @@ const getProjectsData = () => [
 const Projects = () => {
   return (
     <section >
-      <div className="main-container" style={{ maxWidth: '1500px', marginTop: '70px' }} >
+      <div className="main-container" style={{ maxWidth: '1200px', marginTop: '70px' }} >
         <h2 className="text-center mb-5 ">Projects</h2>
 
         {/* Project 1 */}
