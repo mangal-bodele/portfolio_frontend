@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div className="d-flex flex-column min-vh-100">
         <Navbar />
-        <div className="container">
+        <div>
           <Routes>
             {/* This route renders all sections on a single page */}
             <Route path="/" element={

@@ -29,41 +29,31 @@ body {
   text-align: center;
   padding: 50px; /* Add padding for content */
   margin: 20px; /* Add margin around the content */
-  background: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for better readability */
-  border-radius: 10px; /* Optional: Rounded corners */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  border-radius: 10px; /* Rounded corners */
 }
 
 /* Example section styles */
 .section {
   padding: 0; /* Add padding for sections */
-  margin: 500px 0; /* Add vertical margin between sections */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Border for sections */
-  border-radius: 8px; /* Optional: Rounded corners for sections */
+  margin: 100px 0; /* Adjusted vertical margin between sections */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Border for sections */
+  border-radius: 8px; /* Rounded corners for sections */
 }
 
 @keyframes colorChange {
-  0% {
-    background-color: #f4902c; /* Bold Red */
-  }
-  25% {
-    background-color: #8c4ef8; /* Bright Yellow */
-  }
-  50% {
-    background-color: #5886cb; /* Bright Green */
-  }
-  75% {
-    background-color: #f615d4; /* Bright Blue */
-  }
-  100% {
-    background-color: #ec467d; /* Bright Purple */
-  }
+  0% { background-color: #f4902c; } /* Bold Red */
+  25% { background-color: #8c4ef8; } /* Bright Yellow */
+  50% { background-color: #5886cb; } /* Bright Green */
+  75% { background-color: #f615d4; } /* Bright Blue */
+  100% { background-color: #ec467d; } /* Bright Purple */
 }
 
 /* Container Styles */
 .container {
   width: 100%; /* Full width minus some margin */
-  max-width: 1200px; /* Max width for larger screens */
-  padding: 20px; /* Padding inside the container */
+  max-width: 1500px; /* Max width for larger screens */
+  padding: 10px; /* Padding inside the container */
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
@@ -106,18 +96,30 @@ button:hover {
   background-color: #2980b9; /* Darker shade on hover */
 }
 
-/* Navbar Styles */
-.navbar {
-  text-align: center; /* Centered text */
-  padding: 20px; /* Padding for navbar */
-  background-color: #415e7b; /* Dark navbar background */
+/* Navbar and Footer Styles */
+.navbar, footer {
+  height: 60px; /* Set height for navbar and footer */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  padding: 20px; /* Padding for navbar and footer */
+  background-color: #415e7b; /* Dark background */
   color: #bef712; /* Light text color */
 }
 
-/* Footer Styles */
-footer {
-  text-align: center; /* Centered text */
-  padding: 20px; /* Padding for footer */
-  background-color: #415e7b; /* Dark footer background */
-  color: #bef712; /* Light text color */
+/* Projects Container Styles */
+.projects-container {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack project cards vertically */
+  align-items: center; /* Center cards horizontally */
+}
+
+.project-card {
+  width: 100%; /* Full width of the container */
+  max-width: 1000px; /* Maximum width for project cards */
+  margin: 20px 0; /* Space between cards vertically */
+  background-color: #ffffff; /* Background color for cards */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  padding: 20px; /* Padding inside each card */
 }

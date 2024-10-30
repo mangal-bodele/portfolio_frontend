@@ -31,7 +31,7 @@ function Contacts() {
   };
 
   return (
-    <div className="main-container contact-form my-5 p-5" style={{ maxWidth: '1200px', marginTop: '70px' }}>
+    <div className="container contact-form my-5 p-5" style={{ maxWidth: '1200px', marginTop: '40px' }}>
       <h2 className="text-center mb-4">Contact Me</h2>
 
       {isSubmitted && (

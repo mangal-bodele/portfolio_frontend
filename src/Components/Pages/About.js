@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function About() {
   return (
-    <div className="main-container about-section mt-5 p-5" style={{ maxWidth: '1200px', marginTop: '70px' }}>
+    <div className="container about-section mt-5 p-5" style={{ maxWidth: '1200px', marginTop: '40px' }}>
       <div className="row">
         <div className="col-md-6">
           <h2 className="text-center mb-4">Skills</h2>

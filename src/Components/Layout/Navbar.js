@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#0a15b0', height: '70px' }}>
+    <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#0a15b0c5', height: '70px' }}>
       <div className="container">
         <NavLink className="navbar-brand fw-bold" to="/">Mangal Bodele</NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -2,8 +2,8 @@ import React from 'react';
 
 const HomePage = () => {
   return (
-    <div className="main-container" style={{ maxWidth: '1200px', marginTop: '70px' }}>
-      <section className="my-5 p-5">
+    <div className="container " style={{ maxWidth: '1200px', marginTop: '30px' }}>
+      <section className=" my-5 p-5">
         <div className="row">
           {/* Left Column: Image Section with Social Media Icons */}
           <div className="col-md-6 text-center mb-4">
