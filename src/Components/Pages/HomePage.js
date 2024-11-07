@@ -15,7 +15,7 @@ const HomePage = () => {
                 overflow: 'hidden',
                 width: '300px',
                 height: '300px',
-                border: '5px solid #0a15b0c5',
+                border: '5px solid #ffffff',
                 marginBottom: '20px',
               }}
             >

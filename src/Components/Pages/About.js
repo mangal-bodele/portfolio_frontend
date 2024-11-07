@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function About() {
   return (
@@ -99,7 +99,7 @@ function About() {
           <p>
             My skills include JavaScript, React, Python, Django, and Bootstrap. I'm constantly learning and staying up-to-date with the latest tech trends.
           </p>
-          <NavLink to="/contacts" className="btn btn-success btn-lg mt-3">Contact Me</NavLink>
+          <Link to="/#contacts" className="btn btn-success btn-lg mt-3">Contact Me</Link>
         </div>
       </div>
     </div>

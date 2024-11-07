@@ -8,7 +8,7 @@
             }
         },
         "color": {
-            "value": ["#ff0000", "#00ff00", "#0000ff", "#ffff00", "#ff00ff", "#00ffff"], 
+            "value": ["#88c7ff", "#5f8dbc", "#ffffff", "#415e7b"], 
             "anim": {
                 "enable": true,
                 "speed": 40,
