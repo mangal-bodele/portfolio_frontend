@@ -1,5 +1,4 @@
 import React from 'react';
-import { HashLink as Link } from 'react-router-hash-link';
 
 function About() {
   return (
@@ -40,15 +39,15 @@ function About() {
           <p>
             My skills include JavaScript, React, Python, Django, and Bootstrap. I'm constantly learning and staying up-to-date with the latest tech trends.
           </p>
-          <Link 
-            to="https://wa.me/919284662053" 
+          <a 
+            href="https://wa.me/919284662053" 
             className="btn btn-success btn-lg mt-3"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Contact Me via WhatsApp"
           >
             Contact Me
-          </Link>
+          </a>
         </div>
       </div>
     </div>
