@@ -17,25 +17,11 @@ function About() {
   return (
     <div className="container about-section mt-5 p-5" style={{ maxWidth: '1200px' }}>
       <section aria-label="Skills" className="row mb-5">
+        {/* Skills section on the left */}
         <div className="col-md-6">
           <h2 className="text-center mb-4">Skills</h2>
           <ul className="list-unstyled d-flex flex-wrap justify-content-md-start justify-content-center">
-<<<<<<< HEAD
-            {[
-              { src: './Static/python.png', alt: 'Python' },
-              { src: './Static/django.png', alt: 'Django' },
-              { src: './Static/restframework.png', alt: 'Rest Framework' },
-              { src: './Static/mysql.png', alt: 'MySQL' },
-              { src: './Static/javascript.png', alt: 'JavaScript' },
-              { src: './Static/css.png', alt: 'CSS' },
-              { src: './Static/html.png', alt: 'HTML' },
-              { src: './Static/react.png', alt: 'React' },
-              { src: './Static/bootstrap.png', alt: 'Bootstrap' },
-              { src: './Static/github.png', alt: 'GitHub' },
-            ].map((skill, index) => (
-=======
             {skills.map((skill, index) => (
->>>>>>> 735cf62bd007a147486dcee9732f8e759d898613
               <li key={index} className="m-3">
                 <img
                   src={skill.src}
@@ -47,9 +33,8 @@ function About() {
             ))}
           </ul>
         </div>
-      </section>
 
-      <section aria-label="About Me" className="row">
+        {/* About Me section on the right */}
         <div className="col-md-6">
           <h2 className="text-center mb-4">About Me</h2>
           <p>
