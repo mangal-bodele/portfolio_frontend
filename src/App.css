@@ -1,208 +1,76 @@
-/* General styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; /* Added box-sizing to ensure padding and borders are included in element's width/height */
+/* === Home Page Specific Styles === */
+
+/* Profile Image Container */
+.image-container {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  border: 5px solid #ffffff;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  color: #ffffff; /* White text for contrast */
-  background-color: #0e0487; /* Dark navy blue background */
-  animation: colorChange 10s infinite alternate; /* Background color animation */
-  background-image: url('../public/Static/background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  padding-top: 120px; /* Adjusted to prevent content hiding under fixed navbar */
+.image-container:hover {
+  transform: scale(1.05);
 }
 
-/* Particle background container */
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  background-color: #001c56; /* Adjusted navy blue for particle container */
-  opacity: 0.8; /* Slight transparency for particles */
-}
-
-/* Navbar Styles - Always Visible */
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 60px;
+/* Social Media Icons Row */
+.social-icons {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 20px;
-  background-color: #242a44; /* Navy blue */
-  color: #ffffff; /* White text */
-  z-index: 10; /* Ensures navbar stays above other content */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for navbar */
+  margin-top: 20px;
 }
 
-/* Global Content Styling */
-.content {
-  position: relative;
-  z-index: 1; /* Ensures content is above particles */
-  color: white;
-  text-align: center;
-  padding: 50px;
-  margin: 20px;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+.social-icons a {
+  margin: 0 10px;
+}
+
+.social-icons img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border-radius: 10px;
 }
 
-/* Example section styles */
-.section {
-  padding: 20px;
-  margin: 120px 0; /* Adjusted margin to create space for fixed navbar */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Border for sections */
-  border-radius: 8px;
+.social-icons img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-/* Animation for background color changes */
-@keyframes colorChange {
-  0% { background-color: #223368; }
-  25% { background-color: #001c56; }
-  50% { background-color: #0e0487; } 
-  75% { background-color: #001d7a; } 
-  100% { background-color: #1f3b82; }
-}
-
-/* Container Styles */
-.container {
-  width: 100%;
-  max-width: 1500px;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Slightly darker shadow */
-}
-
-/* Header Styles */
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 10px 0;
-  color: #ffffff; /* White text for better contrast */
-}
-
-/* Paragraph Styles */
-p {
-  line-height: 1.6;
-  margin: 10px 0;
-}
-
-/* Link Styles */
-a {
-  color: #88c7ff; /* Light blue links for visibility */
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Button Styles */
-button {
-  padding: 10px 20px;
-  background-color: #415e7b; /* Button background - darker blue */
-  color: #ffffff; /* White text for contrast */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #5f8dbc; /* Lighter shade on hover */
-}
-
-/* Footer Styles */
-footer {
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: #242a44; /* Navy blue */
-  color: #ffffff; /* White text */
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 10; /* Ensures footer stays above other content */
-}
-
-/* Projects Container Styles */
-.projects-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.project-card {
-  width: 100%;
-  max-width: 1000px;
-  margin: 20px 0;
-  background-color: #292f40; /* Dark navy background */
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  color: #ffffff; /* White text for readability */
-}
-
-/* Logo container */
-.logo {
-  display: flex;
-  align-items: center;
-  font-family: 'Arial', sans-serif;
+/* Intro Text Section */
+.intro-section h1 {
+  font-size: 2.2rem;
   font-weight: bold;
-  color: white; /* White text for visibility */
-  padding: 10px;
-  font-size: 20px;
-  background-color: #0e0487; /* Navy blue background to match your site */
-  border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Soft shadow for better visibility */
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Text styling for Django */
-.logo-text {
-  color: #88c7ff; /* Light blue to stand out */
-  font-size: 24px;
-  margin-right: 5px;
-}
-
-/* Text styling for REST Framework */
-.logo-rest {
-  color: #ffffff; /* White for 'REST Framework' to keep it clean */
-  font-size: 18px;
-}
-
-/* Optional: Add a little space around the logo */
-.logo {
-  margin: 20px;
-  padding: 15px;
-}
-
-/* Custom styles for the About section */
-.skill-icon {
-  width: 70px;
-  height: 70px;
-  object-fit: contain;
-}
-
-/* Optional: If you want to adjust the color scheme of the icons or add some shadow */
-.skill-icon:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
-}
-
-/* Styling for the About section text */
-.about-section p {
-  line-height: 1.6;
+.intro-section p {
   font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+}
+
+/* Responsive Adjustment */
+@media (max-width: 768px) {
+  .image-container {
+    width: 220px;
+    height: 220px;
+  }
+
+  .intro-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .intro-section p {
+    font-size: 1rem;
+  }
+
+  .social-icons img {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }
