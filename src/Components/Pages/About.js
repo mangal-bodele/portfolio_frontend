@@ -15,7 +15,7 @@ function About() {
   ];
 
   return (
-    <div className="container about-section mt-5 p-5" style={{ maxWidth: '1200px' }}>
+    <div className="container about-section mt-5 p-5">
       <section aria-label="Skills" className="row mb-5">
         {/* Skills section on the left */}
         <div className="col-md-6">
@@ -26,8 +26,7 @@ function About() {
                 <img
                   src={skill.src}
                   alt={skill.alt}
-                  className="img-fluid shadow-sm"
-                  style={{ width: '70px', height: '70px', objectFit: 'contain' }}
+                  className="img-fluid shadow-sm skill-icon"
                 />
               </li>
             ))}
