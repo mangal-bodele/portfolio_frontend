@@ -1,35 +1,13 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-// Function to retrieve project data (for reference; not used in rendering)
-// const getProjectsData = () => [
-//   {
-//     id: 1,
-//     title: 'Project 1',
-//     image: `${process.env.PUBLIC_URL}/path/to/image1.jpg`, // Replace with your image path
-//     description: 'This is a brief description of Project 1.',
-//   },
-//   {
-//     id: 2,
-//     title: 'Project 2',
-//     image: `${process.env.PUBLIC_URL}/path/to/image2.jpg`, // Replace with your image path
-//     description: 'This is a brief description of Project 2.',
-//   },
-//   {
-//     id: 3,
-//     title: 'Project 3',
-//     image: `${process.env.PUBLIC_URL}/path/to/image3.jpg`, // Replace with your image path
-//     description: 'This is a brief description of Project 3.',
-//   },
-// ];
-
 const Projects = () => {
   return (
     <section>
-      <div className="container" style={{ maxWidth: '1200px', marginTop: '40px' }}>
+      <div className="container projects-section my-5 p-5">
         <h2 className="text-center mb-5">Projects</h2>
 
-        <div className="projects-container"> {/* Flex container for vertical stacking */}
+        <div className="projects-container">
           {/* Project 1 */}
           <div className="project-card row align-items-center">
             <div className="col-md-6 p-3">
@@ -37,7 +15,6 @@ const Projects = () => {
                 src={`${process.env.PUBLIC_URL}/path/to/image1.jpg`}
                 alt="Project 1"
                 className="img-fluid project-image"
-                style={{ height: '200px', objectFit: 'cover', borderRadius: '10px' }}
               />
             </div>
             <div className="col-md-6 p-3">
@@ -58,7 +35,6 @@ const Projects = () => {
                 src={`${process.env.PUBLIC_URL}/path/to/image2.jpg`}
                 alt="Project 2"
                 className="img-fluid project-image"
-                style={{ height: '200px', objectFit: 'cover', borderRadius: '10px' }}
               />
             </div>
             <div className="col-md-6 p-3">
@@ -79,7 +55,6 @@ const Projects = () => {
                 src={`${process.env.PUBLIC_URL}/path/to/image3.jpg`}
                 alt="Project 3"
                 className="img-fluid project-image"
-                style={{ height: '200px', objectFit: 'cover', borderRadius: '10px' }}
               />
             </div>
             <div className="col-md-6 p-3">
