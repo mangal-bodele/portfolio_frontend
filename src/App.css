@@ -1,6 +1,61 @@
-/* === Home Page Specific Styles === */
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Added box-sizing to ensure padding and borders are included in element's width/height */
+}
 
-/* Profile Image Container */
+body {
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* White text for contrast */
+  background-color: #0e0487; /* Dark navy blue background */
+  animation: colorChange 10s infinite alternate; /* Background color animation */
+  background-image: url('../public/Static/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  padding-top: 120px; /* Adjusted to prevent content hiding under fixed navbar */
+}
+
+/* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #242a44; /* Dark navy blue */
+  z-index: 10; /* Ensures navbar stays above other content */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Optional shadow for navbar */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  padding: 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #88c7ff; /* Light blue on hover */
+}
+
+/* Content Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* HomePage Styles */
 .image-container {
   display: inline-block;
   border-radius: 50%;
@@ -9,68 +64,129 @@
   height: 300px;
   border: 5px solid #ffffff;
   margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  transition: transform 0.3s ease;
 }
 
-.image-container:hover {
-  transform: scale(1.05);
-}
-
-/* Social Media Icons Row */
-.social-icons {
+.social-media-icons {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.social-icons a {
+.social-media-icons a {
   margin: 0 10px;
 }
 
-.social-icons img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.social-media-icons img {
+  width: 50px;
+  height: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 10px 0;
+  color: #ffffff; /* White text for better contrast */
+}
+
+/* About Section Styles */
+.about-section .skill-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  margin: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.about-section p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Project Card Styles */
+.project-card {
+  background-color: #292f40;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
-.social-icons img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-}
-
-/* Intro Text Section */
-.intro-section h1 {
-  font-size: 2.2rem;
-  font-weight: bold;
+.project-info {
+  padding: 15px;
   color: #ffffff;
+}
+
+.project-info h3 {
+  color: #ffffff;
+}
+
+.project-info p {
+  color: #b0b0b0;
+}
+
+.project-info .btn {
+  background-color: #415e7b;
+  color: white;
+}
+
+.project-info .btn:hover {
+  background-color: #5f8dbc; /* Lighter shade on hover */
+}
+
+/* Contact Form Styles */
+.contact-form {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.intro-section p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #e0e0e0;
-  margin-bottom: 15px;
+.contact-form .form-control {
+  margin-bottom: 10px;
 }
 
-/* Responsive Adjustment */
-@media (max-width: 768px) {
-  .image-container {
-    width: 220px;
-    height: 220px;
-  }
+.contact-form .btn-success {
+  background-color: #415e7b;
+  color: white;
+}
 
-  .intro-section h1 {
-    font-size: 1.6rem;
-  }
+.contact-form .btn-success:hover {
+  background-color: #5f8dbc;
+}
 
-  .intro-section p {
-    font-size: 1rem;
-  }
+.alert {
+  margin-top: 10px;
+  text-align: center;
+}
 
-  .social-icons img {
-    width: 40px !important;
-    height: 40px !important;
-  }
+/* Footer Styles */
+footer {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #242a44;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+/* Animation for background color changes */
+@keyframes colorChange {
+  0% { background-color: #223368; }
+  25% { background-color: #001c56; }
+  50% { background-color: #0e0487; }
+  75% { background-color: #001d7a; }
+  100% { background-color: #1f3b82; }
 }
