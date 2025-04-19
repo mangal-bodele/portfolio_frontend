@@ -2,88 +2,55 @@ import React from 'react';
 
 const HomePage = () => {
   return (
-    <div className="container " style={{ maxWidth: '1200px', marginTop: '30px' }}>
-      <section className=" my-5 p-5">
+    <div className="container homepage-container">
+      <section className="homepage-section">
         <div className="row">
           {/* Left Column: Image Section with Social Media Icons */}
           <div className="col-md-6 text-center mb-4">
-            <div
-              className="image-container"
-              style={{
-                display: 'inline-block',
-                borderRadius: '50%',
-                overflow: 'hidden',
-                width: '300px',
-                height: '300px',
-                border: '5px solid #ffffff',
-                marginBottom: '20px',
-              }}
-            >
+            <div className="image-container">
               <img
                 src="./Static/mangal_bodele.png"
                 alt="Mangal Bodele"
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                className="profile-image"
               />
             </div>
 
             {/* Social Media Icons */}
-            <div className="d-flex justify-content-center mt-3">
+            <div className="social-icons mt-3">
               <a
                 href="https://www.linkedin.com/in/mangal-bodele/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-3"
               >
-                <img
-                  src="./Static/linkedin.png"
-                  alt="LinkedIn"
-                  style={{ width: '50px', height: '50px' }}
-                />
+                <img src="./Static/linkedin.png" alt="LinkedIn" className="social-icon" />
               </a>
               <a
                 href="https://www.github.com/mangal-bodele/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-3"
               >
-                <img
-                  src="./Static/github.png"
-                  alt="GitHub"
-                  style={{ width: '70px', height: '50px' }}
-                />
+                <img src="./Static/github.png" alt="GitHub" className="social-icon wide-icon" />
               </a>
               <a
                 href="https://wa.me/919284662053"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-3"
               >
-                <img
-                  src="./Static/whatsapp.png"
-                  alt="WhatsApp"
-                  style={{ width: '60px', height: '60px' }}
-                />
+                <img src="./Static/whatsapp.png" alt="WhatsApp" className="social-icon large-icon" />
               </a>
               <a
                 href="./Static/mangal_bodele_resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mx-3"
               >
-                <img
-                  src="./Static/resume.png"
-                  alt="Resume"
-                  style={{ width: '50px', height: '50px' }}
-                />
+                <img src="./Static/resume.png" alt="Resume" className="social-icon" />
               </a>
             </div>
           </div>
 
           {/* Right Column: Introduction */}
-          <div className="col-md-6 text-left mb-4">
-            <h1 className="text-center mb-5" style={{ fontSize: '2rem', lineHeight: '1.2' }}>
-              Welcome to My Portfolio
-            </h1>
+          <div className="col-md-6 text-left mb-4 intro-section">
+            <h1 className="intro-heading">Welcome to My Portfolio</h1>
             <p>
               Hi, I'm Mangal Bodele, a passionate full stack developer with expertise in both frontend and backend technologies.
               I create efficient, scalable, and user-friendly applications.
